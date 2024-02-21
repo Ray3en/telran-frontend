@@ -1,0 +1,17 @@
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+.product_image{
+    object-fit: cover; 
+    object-position: center;
+    height: 250px;
+    width: 300px;
+}
+
+@media (max-width: 1000px){
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
